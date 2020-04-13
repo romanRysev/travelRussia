@@ -1,0 +1,161 @@
+.video-box {
+    display: flex;
+    margin-top: 72px;
+    padding-bottom: 102px;
+}
+
+.video-cover__opacity {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    padding-bottom: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.video-cover__opacity:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-cover__play {
+    width: 41px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.video-cover {
+    border-radius: 5px;
+    width: calc((100% - 18px)/2);
+}
+
+.video-cover:nth-child(1) {
+    margin-right: 18px;
+}
+
+.video-cover_theme_observatory {
+    background-image: url(../images/Observatory.jpg);
+    background-size: cover;
+
+}
+
+.video-cover_theme_kamchatka {
+    background-image: url(../images/Kamchatka.jpg);
+    background-size: cover;
+}
+
+.video-cover__title {
+    margin: 12px 0 18px 0;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 39px;
+    max-width: 322px;
+}
+
+.video-cover__subtitle {
+    font-size: 14px;
+    line-height: 15px;
+    margin: 0;
+}
+.video-cover__length {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.3em;
+    margin: 0;
+}
+
+.video-cover__description {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 1175px) {
+
+    .video-cover__title {
+        font-size: 28px;
+        line-height: 30px;
+        margin: 8px 0 12px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .video-cover {
+        width: calc((100% - 16px)/2);
+        background-size: cover;
+    }
+    
+    .video-cover__opacity {
+        width: 100%;
+        height: auto;
+        padding: calc((100% - 18px)/3.18);
+    }
+
+}
+
+@media screen and (max-width: 768px)  {
+    .video-cover__title {
+        font-size: 24px;
+        line-height: 26px;
+        margin: 8px 0 12px 0;
+    }
+
+    .video-cover__opacity {
+        padding: calc((100% - 18px)/3.5);
+    }
+
+    .video-cover__description {
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .video-cover__play {
+        width: 41px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 710px)  {
+    .video-box {
+        flex-direction: column;
+    }
+
+    .video-cover:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .video-cover {
+        width: 100%;
+    }
+
+    .video-cover__title {
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 375px)  {
+
+    .video-cover__description {
+        left:16px;
+        bottom: 16px;
+    }
+
+    .video-cover__play {
+        top: 16px;
+        left: 16px;
+    }
+
+    .video-box {
+        padding-bottom: 64px;
+    }
+}
